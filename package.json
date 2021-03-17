@@ -1,0 +1,16 @@
+{
+  "name": "discord-nitro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Shahzain",
+  "license": "ISC",
+  "dependencies": {
+    "console-read-write": "^0.1.1",
+    "string-generator-js": "^1.0.1"
+  }
+}
