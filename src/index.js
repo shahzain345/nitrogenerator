@@ -13,6 +13,13 @@ async function main() {
         }, 30000)
         return;
     }
+    if (isNaN(integer)) {
+        console.log(`Error: ${numberOfCodes} is not a number! \nTerminal clossing in 30 seconds`)
+        setTimeout(() => {
+            console.log("Bye!")
+        }, 30000)
+        return;
+    }
 for (let i = 0; i < integer; i++) {
     let options = {length:16}
 let code = generator.generate(options)
@@ -20,9 +27,9 @@ let newData = `https://discord.gift/${code}`
 fs.readFile('nitros.txt', (err, data) => {
     if (err) throw err
     if (!data) {
-        fs.writeFile('nitros.txt', newData + os.EOL)
+        fs.writeFile('./nitros.txt', newData + os.EOL)
     } else if (data) {
-        fs.appendFile('nitros.txt', newData + os.EOL, 'utf8', function(error) {
+        fs.appendFile('./nitros.txt', newData + os.EOL, 'utf8', function(error) {
             if (error) return console.log('An error occured, try again!')
         })
     }
