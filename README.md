@@ -1,7 +1,7 @@
 # Nitro Generator
 
 ## Requirements
-[Node.js]('https://nodejs.org/en/')
+[Node.js](https://nodejs.org/en/)
 ## How to start
 Run the start file and the nitro generator will start</br>
 After the nitro codes are done generating check the nitros.txt file to get the codes
